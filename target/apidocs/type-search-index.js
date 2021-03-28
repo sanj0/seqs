@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"de.sanj0.seqs","l":"JSFunction"},{"p":"de.sanj0.seqs","l":"Main"},{"p":"de.sanj0.seqs","l":"SEQSUtils"}]
