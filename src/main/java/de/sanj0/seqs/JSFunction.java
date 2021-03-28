@@ -20,7 +20,7 @@ public class JSFunction implements DoubleFunction<Double> {
                 replaceAll("floor", "Math.floor").
                 replaceAll("sin", "Math.sin").
                 replaceAll("cos", "Math.cos").
-:                replaceAll("tan", "Math.tan");
+                replaceAll("tan", "Math.tan");
     }
 
     @Override
