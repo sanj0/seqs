@@ -41,7 +41,7 @@ public class Main {
 
         if (cmd.hasOption(HELP_OPTION)) {
             final String header = "Solves an equation\nThe equation has to be valid JavaScript\n";
-            final String footer = "\nExample usage: seqs -d 5 \"x**2+4 = 7\"\n\nBuilt and maintained by sanj0 at https://www.github.com/sanj0/seqs";
+            final String footer = "\nExample usage: seqs -d 5 \"pow(x,2)+4 = 7\"\n\nBuilt and maintained by sanj0 at https://www.github.com/sanj0/seqs";
 
             final HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp("seqs <EQUATION>", header, options, footer, true);
