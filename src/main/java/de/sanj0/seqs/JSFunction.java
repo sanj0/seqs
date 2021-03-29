@@ -11,16 +11,7 @@ public class JSFunction implements DoubleFunction<Double> {
     private String function;
 
     public JSFunction(final String function) {
-        this.function = function.replaceAll("pow", "Math.pow").
-                replaceAll("sqrt", "Math.sqrt").
-                replaceAll("cbrt", "Math.cbrt").
-                replaceAll("log", "Math.log").
-                replaceAll("abs", "Math.abs").
-                replaceAll("ceil", "Math.ceil").
-                replaceAll("floor", "Math.floor").
-                replaceAll("sin", "Math.sin").
-                replaceAll("cos", "Math.cos").
-                replaceAll("tan", "Math.tan");
+        this.function = function;
     }
 
     @Override

@@ -20,6 +20,39 @@ public class SEQSUtils {
     }
 
     /**
+     * Provides shortcuts to often used
+     * Math functions like {@code sqrt} and {@code pow}
+     * <p>
+     * Full list of supported function shortcuts: <br>
+     * <ul>
+     *     <li>pow -> Math.pow</li>
+     *     <li>sqrt -> Math.sqrt</li>
+     *     <li>cbrt -> Math.cbrt</li>
+     *     <li>log -> Math.log</li>
+     *     <li>abs -> Math.abs</li>
+     *     <li>ceil -> Math.ceil</li>
+     *     <li>floor -> Math.floor</li>
+     *     <li>sin -> Math.sin</li>
+     *     <li>cos -> Math.cos</li>
+     *     <li>tan -> Math.tan</li>
+     * </ul>
+     *
+     * @return valid js from given simple seqs expression syntax
+     */
+    public static String seqsSyntaxToJS(final String eq) {
+        return eq.replace("pow", "Math.pow").
+                replace("sqrt", "Math.sqrt").
+                replace("cbrt", "Math.cbrt").
+                replace("log", "Math.log").
+                replace("abs", "Math.abs").
+                replace("ceil", "Math.ceil").
+                replace("floor", "Math.floor").
+                replace("sin", "Math.sin").
+                replace("cos", "Math.cos").
+                replace("tan", "Math.tan");
+    }
+
+    /**
      * Converts the given equation string
      * into a function such as the root of said
      * function in f(x) = 0 is the solution of the
