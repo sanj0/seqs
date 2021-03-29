@@ -25,16 +25,16 @@ public class SEQSUtils {
      * <p>
      * Full list of supported function shortcuts: <br>
      * <ul>
-     *     <li>pow -> Math.pow</li>
-     *     <li>sqrt -> Math.sqrt</li>
-     *     <li>cbrt -> Math.cbrt</li>
-     *     <li>log -> Math.log</li>
-     *     <li>abs -> Math.abs</li>
-     *     <li>ceil -> Math.ceil</li>
-     *     <li>floor -> Math.floor</li>
-     *     <li>sin -> Math.sin</li>
-     *     <li>cos -> Math.cos</li>
-     *     <li>tan -> Math.tan</li>
+     *     <li>pow - Math.pow</li>
+     *     <li>sqrt - Math.sqrt</li>
+     *     <li>cbrt - Math.cbrt</li>
+     *     <li>log - Math.log</li>
+     *     <li>abs - Math.abs</li>
+     *     <li>ceil - Math.ceil</li>
+     *     <li>floor - Math.floor</li>
+     *     <li>sin - Math.sin</li>
+     *     <li>cos - Math.cos</li>
+     *     <li>tan - Math.tan</li>
      * </ul>
      *
      * @return valid js from given simple seqs expression syntax
