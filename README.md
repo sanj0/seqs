@@ -55,6 +55,16 @@ Example usage: seqs -d 5 "pow(x,2)+4 = 7"
 Built and maintained by sanj0 at https://www.github.com/sanj0/seqs
 ```
 
+### Uninstall seqs
+The seqs installation script places two files on the system:
+
+1. `/usr/local/bin/seqs.jar`
+2. `/usr/local/bin/seqs`
+
+To uninstall seqs, simply delete the two files using your file explorer or the
+following command:
+`rm /usr/local/bin/seqs.jar && rm /usr/local/bin/seqs`
+
 ### Equation syntax
 Any equation has to contain three parts the left hand, the equal sign `=`
 and the right hand. `x` is the variable any equation is solved for, it can be
