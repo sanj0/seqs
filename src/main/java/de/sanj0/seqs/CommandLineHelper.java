@@ -24,6 +24,7 @@ public class CommandLineHelper {
                 argName("INTEGER").
                 type(Number.class).build());
         options.addOption(Main.VERBOSE_OPTION, "verbose", false, "prints out some more information");
+        options.addOption(Main.HUMAN_OPTION, "human", false, "i'm a human - treat me like one (prefixes the solution with 'x = ')");
         options.addOption(Main.HELP_OPTION, "help", false, "prints this help");
 
         final CommandLineParser parser = new DefaultParser();
