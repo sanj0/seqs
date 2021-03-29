@@ -26,11 +26,12 @@ public class Main {
         if (cmd.getArgList().size() == 1) {
             final JSFunction f = SEQSUtils.equationToFunctionWithRootAsSolution(SEQSUtils.seqsSyntaxToJS(cmd.getArgList().get(0)));
 
-            if (cmd.hasOption(VERBOSE_OPTION)) {
+            final boolean verbose = cmd.hasOption(VERBOSE_OPTION);
+            if (verbose) {
                 System.out.println("function whose root is the solution: " + f.getFunction());
             }
             final double solution = SEQSUtils.newtonRoot(f, SEQSUtils.derive(f), start, depth);
-            System.out.println(solution);
+            System.out.println((verbose ? "x = " : "") + solution);
         } else {
             System.err.println("equation missing and/or unknown args! try seqs -h for help");
         }
