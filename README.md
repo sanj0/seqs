@@ -32,7 +32,8 @@ seqs -h
 Invoking `seqs` with the `-h` or `--help` option prints the following help
 (as of 1.0-SNAPSHOT on 29.03.21):
 ```bash
-usage: seqs <EQUATION> [-d <INTEGER>] [-dx <DOUBLE>] [-h] [-s <INTEGER>]
+usage: seqs <EQUATION> [-d <INTEGER>] [-dx <DOUBLE>] [-h] [-m] [-s
+       <INTEGER>] [-v]
 Solves an equation
 The equation has to be valid JavaScript
  -d,--depth <INTEGER>   the number of times to apply the newton formula -
@@ -42,9 +43,12 @@ The equation has to be valid JavaScript
  -dx <DOUBLE>           the dx value to be used for deriving
                         Default: 1.0E-6
  -h,--help              prints this help
+ -m,--human             i'm a human - treat me like one (prefixes the
+                        solution with 'x = ')
  -s,--start <INTEGER>   the starting value for the newton method to solve
                         the equation
                         Default: 2.0
+ -v,--verbose           prints out some more information
 
 Example usage: seqs -d 5 "pow(x,2)+4 = 7"
 
