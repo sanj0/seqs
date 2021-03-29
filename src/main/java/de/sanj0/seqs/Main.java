@@ -10,6 +10,7 @@ public class Main {
     public static final String DEPTH_OPTION = "d";
     public static final String START_OPTION = "s";
     public static final String HELP_OPTION = "h";
+    public static final String VERBOSE_OPTION = "v";
 
     public static final int DEFAULT_DEPTH = 3;
     public static final double DEFAULT_DX = SEQSUtils.DX;
@@ -24,6 +25,10 @@ public class Main {
 
         if (cmd.getArgList().size() == 1) {
             final JSFunction f = SEQSUtils.equationToFunctionWithRootAsSolution(SEQSUtils.seqsSyntaxToJS(cmd.getArgList().get(0)));
+
+            if (cmd.hasOption(VERBOSE_OPTION)) {
+                System.out.println("function whose root is the solution: " + f.getFunction());
+            }
             final double solution = SEQSUtils.newtonRoot(f, SEQSUtils.derive(f), start, depth);
             System.out.println(solution);
         } else {

@@ -23,6 +23,7 @@ public class CommandLineHelper {
                 desc("the starting value for the newton method to solve the equation\nDefault: " + Main.DEFAULT_START).
                 argName("INTEGER").
                 type(Number.class).build());
+        options.addOption(Main.VERBOSE_OPTION, "verbose", false, "prints out some more information");
         options.addOption(Main.HELP_OPTION, "help", false, "prints this help");
 
         final CommandLineParser parser = new DefaultParser();
